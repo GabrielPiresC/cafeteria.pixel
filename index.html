@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Cafeteria Pixel</title>
+  </head>
+
+  <body>
+    <header>
+      <img id="image-header" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmd4a2l3M2pxOXh1OHlibW95eGE2emgzM2ZvNnhhNW92Mnp4cGt4bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pVGsAWjzvXcZW4ZBTE/giphy.gif" alt="Pixel Gif Cofee Shop">
+      <div id="bem-vindo">
+        <h1>Bem-vindo(a) a 8-Bit Café</h1>
+        <br/>
+          <nav>
+            <ul>
+              <li><a href="#menu-section">MENU</a></li>
+              <li><a href="#pedido-section">PEDIDO</a></li>
+            </ul>
+          </nav>
+      </div>
+    </header>
+    
+    <main>
+      <section id="menu-section">
+        <h2>MENU</h2>
+        <article class="cafe-expresso">
+          <div class="image-cafe">
+            <img id="image-section-1" src="https://media.tenor.com/eRnF_D3JcGwAAAAm/cafe.webp" alt="Pixel Gif Coffee">
+          </div>
+          <div class="infos-menu">
+            <h3>Café Expresso</h3>
+            <br/>
+            <p><i>Café da casa, quentinho e saboroso.</i></p>
+          </div>
+          <div class="texto-preco">
+            <span>R$ 7,00</span>
+          </div>
+        </article>
+
+        <article class="waffle">
+          <div class="image-waffle">
+            <img id="image-section-2" src="https://media.tenor.com/mQSiEmgPg2MAAAAm/pixel.webp" alt="Pixel Gif Waffles">
+          </div>
+          <div class="infos-menu-2">
+            <h3>Waffle</h3>
+            <br/>
+            <p><i>3 waffles com calda da casa e morango.</i></p>
+          </div>
+          <div class="texto-preco-2">
+            <span>R$ 23,00</span>
+          </div>
+        </article>
+
+        <article class="cookie"> 
+          <div class="image-cookie">
+            <img id="image-section-3" src="https://media.tenor.com/98uDrFyaV6EAAAAm/r74n-r74moji.webp" alt="Pixel Gif Cookie">
+          </div>
+          <div class="infos-menu-3">
+            <h3>Cookie</h3>
+            <br/>
+            <p><i>Tradicional com gotas de chocolate.</i></p>
+          </div>
+          <div class="texto-preco-3">
+            <span>R$ 10,00</span>
+          </div>
+        </article>
+      </section>
+      
+      <section id="pedido-section">
+        <h2>PEDIDO</h2>
+        <form>
+          <label for="nome">Seu nome: </label><input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+          <h4>Quantidade:</h4>
+          <br/>
+          <label for="quantidade-cafe">Café Expresso</label>
+          <input type="number" id="quantidade-cafe" name="quantidade-cafe" min="0" max="10" required>
+          <br/>
+          <label for="quantidade-panqueca">Panqueca</label>
+          <input type="number" id="quantidade-panqueca" name="quantidade-panqueca" min="0" max="10" required>
+          <br/>
+          <label for="quantidade-cookie">Cookie</label>
+          <input type="number" id="quantidade-cookie" name="quantidade-cookie" min="0" max="10" required>
+          <br/>
+          <h4>Deseja personalizar seu pedido?</h4>
+          <p>Café Expresso:</p>
+          <br/>
+          <label for="cafe-com-acucar">Com açúcar</label>
+          <input type="radio" id="cafe-com-acucar" name="cafe" value="com-acucar" required>
+          <label for="cafe-sem-acucar">Sem açúcar</label>
+          <input type="radio" id="cafe-sem-acucar" name="cafe" value="sem-acucar" required>
+          <br/>
+          <p>Panqueca:</p>
+          <br/>
+          <label for="panqueca-com-calda">Com calda</label>
+          <input type="checkbox" id="panqueca-com-calda" name="panqueca" value="com-calda">
+          <label for="panqueca-sem-calda">Sem calda</label>
+          <input type="checkbox" id="panqueca-sem-calda" name="panqueca" value="sem-calda">
+          <label for="panqueca-com-morango">Com morango</label>
+          <input type="checkbox" id="panqueca-com-morango" name="panqueca" value="com-morango">
+          <label for="panqueca-sem-morango">Sem morango</label>
+          <input type="checkbox" id="panqueca-sem-morango" name="panqueca" value="sem-morango">
+          <br/><br/>
+          <label for="comentario">Deseja adicionar um comentário?</label><br/>
+          <textarea id="comentario" name="comentario" maxlength="200" placeholder="Deixe aqui algum comentário"></textarea>
+          <br/><br/>
+          <input type="submit" value="IR PARA O CHECKOUT">
+        </form>
+      </section>
+    </main>
+    <br/>
+
+    <footer>
+      <p>Feito com amor por  @GabrielPiresC</p>
+    </footer>
+  </body>
+</html>
